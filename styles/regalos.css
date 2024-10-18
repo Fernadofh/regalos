@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     overflow: hidden;
-    
 }
 
 .background {
@@ -16,7 +15,7 @@ body {
     overflow: hidden;
     background-image: url('fondo-regalos.jpg');
     background-size: cover;
- 
+   
 }
 
 .container {
@@ -24,7 +23,7 @@ body {
     margin: 10vh auto 10vh; /* Ajuste en los márgenes superior e inferior */
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     height: auto;
 }
@@ -53,4 +52,37 @@ body {
 
 .gift-list a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .gift-list li {
+        font-size: 14px;
+        margin: 10px 0;
+    
+    }
+    .container {
+        max-width: 80%;
+        margin: 5vh auto 5vh; /* Ajuste en los márgenes superior e inferior */
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        height: auto;
+    
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
